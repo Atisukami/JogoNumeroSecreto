@@ -1,6 +1,6 @@
 //puxa o numero aleatorio para o jogo
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -12,7 +12,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 exibirTextoNaTela('h1', 'jogo do numero secreto');
-exibirTextoNaTela('p', 'tente um numero de 1 a 10');
+exibirTextoNaTela('p', 'tente um numero de 1 a 100');
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
